@@ -1,55 +1,40 @@
 # Revit Door & Window Counter
 
-A minimal Revit add-in that counts **Doors** and **Windows** in the current model, including a **breakdown by Type**.
+Two commands in one DLL:
 
-## Features
+- **Count by Level** (`RevitDoorWindowCounter.CmdCountDWByLevel`)  
+  Shows Doors/Windows totals grouped by **Level** (and type breakdown if enabled in code).
 
-- Counts Door instances (`OST_Doors`)
-- Counts Window instances (`OST_Windows`)
-- Shows count by **Family : Type** (e.g. `Single-Flush : 900x2100 = 12`)
+- **Create Schedules** (`RevitDoorWindowCounter.CmdCreateDoorWindowSchedules`)  
+  Creates schedules grouped by **Level + Family and Type + Count**.
 
-## Requirements
-
-- Autodesk Revit (any version that supports .NET Framework add-ins)
-- Visual Studio (recommended) with **.NET desktop development**
-- Revit API references:
-  - `RevitAPI.dll`
-  - `RevitAPIUI.dll`
-
-## Build
-
-1. Open the solution in **Visual Studio**
-2. Add references to:
-   - `RevitAPI.dll`
-   - `RevitAPIUI.dll`  
-   (from your Revit installation folder, e.g. `C:\Program Files\Autodesk\Revit 20XX\`)
-3. Set **Copy Local = False** for both references
-4. Build the project
-
-The output DLL will be in:
-- `bin\Debug\` or `bin\Release\`
+Schedules appear in: **Project Browser → Schedules/Quantities**
 
 ## Install (Manual)
 
-### 1) Copy DLL to a fixed location
+1. Copy DLL to a fixed path, e.g. `C:\MyRevitAddins\RevitDoorWindowCounter.dll`
+2. Copy `.addin` to `C:\ProgramData\Autodesk\Revit\Addins\20XX\`
 
-Example:
-- `C:\MyRevitAddins\RevitDoorWindowCounter.dll`
-
-### 2) Create the `.addin` manifest
-
-Create a file named `RevitDoorWindowCounter.addin` with the following content
-(edit `<Assembly>` path and the Revit year folder `20XX`):
+Example `.addin` (register BOTH commands):
 
 ```xml
 <?xml version="1.0" encoding="utf-8" standalone="no"?>
 <RevitAddIns>
+
   <AddIn Type="Command">
-    <Name>Revit Door & Window Counter</Name>
+    <Name>Count Doors &amp; Windows by Level</Name>
     <Assembly>C:\MyRevitAddins\RevitDoorWindowCounter.dll</Assembly>
-    <AddInId>8D83C886-B739-4ACD-A9DB-1BC78F315B2C</AddInId>
-    <FullClassName>RevitDoorWindowCounter.CmdCountKusen</FullClassName>
+    <AddInId>0F7E6B6D-6B77-4F0D-9D7C-3D1B3C7C8F01</AddInId>
+    <FullClassName>RevitDoorWindowCounter.CmdCountDWByLevel</FullClassName>
     <VendorId>TEST</VendorId>
-    <VendorDescription>Learning</VendorDescription>
   </AddIn>
+
+  <AddIn Type="Command">
+    <Name>Create Door/Window Schedules (Level+Type+Count)</Name>
+    <Assembly>C:\MyRevitAddins\RevitDoorWindowCounter.dll</Assembly>
+    <AddInId>3A7A74D2-7F5D-4F61-9D7F-7C6A0D7E7F21</AddInId>
+    <FullClassName>RevitDoorWindowCounter.CmdCreateDoorWindowSchedules</FullClassName>
+    <VendorId>TEST</VendorId>
+  </AddIn>
+
 </RevitAddIns>
