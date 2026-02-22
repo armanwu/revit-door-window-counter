@@ -1,6 +1,6 @@
 # Revit Door & Window Counter
 
-A minimal Revit add-in that counts **Doors** and **Windows** (kusen) in the current model, including a **breakdown by Type**.
+A minimal Revit add-in that counts **Doors** and **Windows** in the current model, including a **breakdown by Type**.
 
 ## Features
 
