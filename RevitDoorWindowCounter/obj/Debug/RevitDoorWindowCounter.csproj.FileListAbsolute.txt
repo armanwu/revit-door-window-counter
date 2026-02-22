@@ -1,0 +1,6 @@
+E:\core\projects\github\revit-door-window-counter\RevitDoorWindowCounter\bin\Debug\RevitDoorWindowCounter.dll
+E:\core\projects\github\revit-door-window-counter\RevitDoorWindowCounter\bin\Debug\RevitDoorWindowCounter.pdb
+E:\core\projects\github\revit-door-window-counter\RevitDoorWindowCounter\obj\Debug\RevitDoorWindowCounter.csproj.AssemblyReference.cache
+E:\core\projects\github\revit-door-window-counter\RevitDoorWindowCounter\obj\Debug\RevitDoorWindowCounter.csproj.CoreCompileInputs.cache
+E:\core\projects\github\revit-door-window-counter\RevitDoorWindowCounter\obj\Debug\RevitDoorWindowCounter.dll
+E:\core\projects\github\revit-door-window-counter\RevitDoorWindowCounter\obj\Debug\RevitDoorWindowCounter.pdb

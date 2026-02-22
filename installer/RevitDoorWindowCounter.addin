@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<RevitAddIns>
+  <AddIn Type="Command">
+    <Name>Revit Door & Window Counter (By Level)</Name>
+
+    <!-- UBAH PATH INI sesuai lokasi DLL Anda -->
+    <Assembly>C:\MyRevitAddins\RevitDoorWindowCounter.dll</Assembly>
+
+    <!-- GUID bebas, tapi harus unik -->
+    <AddInId>0F7E6B6D-6B77-4F0D-9D7C-3D1B3C7C8F01</AddInId>
+
+    <!-- UBAH kalau namespace Anda bukan RevitDoorWindowCounter -->
+    <FullClassName>RevitDoorWindowCounter.CmdCountDWByLevel</FullClassName>
+
+    <VendorId>TEST</VendorId>
+    <VendorDescription>Learning</VendorDescription>
+  </AddIn>
+</RevitAddIns>
