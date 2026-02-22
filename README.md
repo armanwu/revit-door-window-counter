@@ -34,7 +34,7 @@ The output DLL will be in:
 ### 1) Copy DLL to a fixed location
 
 Example:
-- `C:\MyRevitAddins\RevitDoorWindowCounter\RevitDoorWindowCounter.dll`
+- `C:\MyRevitAddins\RevitDoorWindowCounter.dll`
 
 ### 2) Create the `.addin` manifest
 
@@ -46,7 +46,7 @@ Create a file named `RevitDoorWindowCounter.addin` with the following content
 <RevitAddIns>
   <AddIn Type="Command">
     <Name>Revit Door & Window Counter</Name>
-    <Assembly>C:\MyRevitAddins\RevitDoorWindowCounter\RevitDoorWindowCounter.dll</Assembly>
+    <Assembly>C:\MyRevitAddins\RevitDoorWindowCounter.dll</Assembly>
     <AddInId>8D83C886-B739-4ACD-A9DB-1BC78F315B2C</AddInId>
     <FullClassName>RevitDoorWindowCounter.CmdCountKusen</FullClassName>
     <VendorId>TEST</VendorId>
