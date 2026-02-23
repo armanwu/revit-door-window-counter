@@ -19,4 +19,13 @@
     <VendorDescription>Learning</VendorDescription>
   </AddIn>
 
+  <AddIn Type="Command">
+    <Name>Count Doors &amp; Windows (Host + Links) → CSV</Name>
+    <Assembly>C:\MyRevitAddins\RevitDoorWindowCounter.dll</Assembly>
+    <AddInId>6C2C4A0E-1B5D-4E61-9E6B-2C9F2D4B1A11</AddInId>
+    <FullClassName>RevitDoorWindowCounter.CmdCountDWHostAndLinksExportCsv</FullClassName>
+    <VendorId>TEST</VendorId>
+    <VendorDescription>Learning</VendorDescription>
+  </AddIn>	
+
 </RevitAddIns>

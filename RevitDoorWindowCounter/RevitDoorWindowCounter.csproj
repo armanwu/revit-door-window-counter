@@ -50,6 +50,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="CmdCountDWByLevel.cs" />
+    <Compile Include="CmdCountDWHostAndLinksExportCsv.cs" />
     <Compile Include="CmdCreateDoorWindowSchedules.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
