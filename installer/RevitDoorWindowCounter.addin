@@ -2,24 +2,6 @@
 <RevitAddIns>
 
   <AddIn Type="Command">
-    <Name>Create Door &amp; Window Schedules</Name>
-    <Assembly>C:\MyRevitAddins\RevitDoorWindowCounter.dll</Assembly>
-    <AddInId>3A7A74D2-7F5D-4F61-9D7F-7C6A0D7E7F21</AddInId>
-    <FullClassName>RevitDoorWindowCounter.CmdCreateDoorWindowSchedules</FullClassName>
-    <VendorId>TEST</VendorId>
-    <VendorDescription>Learning</VendorDescription>
-  </AddIn>
-
-  <AddIn Type="Command">
-    <Name>Count Doors &amp; Windows by Level</Name>
-    <Assembly>C:\MyRevitAddins\RevitDoorWindowCounter.dll</Assembly>
-    <AddInId>0F7E6B6D-6B77-4F0D-9D7C-3D1B3C7C8F01</AddInId>
-    <FullClassName>RevitDoorWindowCounter.CmdCountDWByLevel</FullClassName>
-    <VendorId>TEST</VendorId>
-    <VendorDescription>Learning</VendorDescription>
-  </AddIn>
-
-  <AddIn Type="Command">
     <Name>Count Doors &amp; Windows (Host + Links) → CSV</Name>
     <Assembly>C:\MyRevitAddins\RevitDoorWindowCounter.dll</Assembly>
     <AddInId>6C2C4A0E-1B5D-4E61-9E6B-2C9F2D4B1A11</AddInId>
